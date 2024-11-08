@@ -1,0 +1,60 @@
+body{
+    padding:0px;
+    margin:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width:100vw;
+    background-color: bisque;
+}
+#container{
+    height: 50%;
+    width:20%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}
+img{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#text{
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    left:-100%;
+    transition: 2s;
+}
+#img{
+    position: absolute;
+    transition: 2s;
+}
+
+h1{
+    color: rgb(240, 56, 56);
+}
+h3{
+    color:bisque
+}
+button{
+    padding: 6px 20px;
+    color: rgb(240, 56, 56);
+    font-weight: bold;
+
+}
+#container:hover #text{
+    transform: translateX(100%);
+    transition: 2s;
+}
+#container:hover #img{
+    transition: 2s;
+    transform: translateX(100%);
+}
